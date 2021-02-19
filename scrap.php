@@ -9,6 +9,7 @@ if(!$conn){
     die("Hello, Couldn't connect to database");
 }
 
+
 $beginQuery = "SELECT `begin_scrap` FROM begin_scrap WHERE id = 1 LIMIT 1";
 $rsp = mysqli_query($conn, $beginQuery);
 $begin = mysqli_fetch_row($rsp)[0];
